@@ -11,16 +11,39 @@
   text-align: center;
 }
 
+.typewriter .name {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: wrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .05rem; /* Adjust as needed */
+  animation: 
+    typing 1.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 30% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
 .about>h1{
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
   font-size: 3.5rem;
   color: yellow;
-  margin-bottom: 2rem;
   z-index: 1;
 }
 .about>p{
   font-size: 1.5rem;
+  margin-top: 2rem;
 }
 .skills{
   font-family: Arial, Helvetica, sans-serif;
@@ -34,24 +57,29 @@
   color: rgb(29, 44, 81);
 }
 .skills>div{
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   padding: 1rem;
 }
 h2{
   font-weight: bold;
 }
 /* .lang{
-  align-items:flex-start;
-  flex-wrap: wrap;
+  text-align: left;
+  margin-right: 50vw;
+  width: 40vw;
+  border-right: 1px solid black;
 }
 .web-tech{
-  align-items: flex-end;
-  flex-wrap: wrap;
-  margin-left: 30vw;
+  text-align: left;
+  margin-left: 60vw;
+  width: 40vw;
+  border-left: 1px solid black;
 }
 .other-tech{
-  align-items: flex-start;
-  flex-wrap: wrap;
+  text-align: left;
+  margin-right: 50vw;
+  width: 40vw;
+  border-right: 1px solid black;
 } */
 

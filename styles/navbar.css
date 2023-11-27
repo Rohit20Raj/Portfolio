@@ -15,7 +15,7 @@
 .nav-bg{
   background-color: rgb(29, 44, 81);
   color: white;
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
 }
 

@@ -7,8 +7,8 @@ import "../../styles/style.css";
 function Home() {
   return (
     <div className="home">
-      <div className="about">
-        <h1>Hi, My name is Rohit</h1>
+      <div className="about typewriter">
+        <h1 className="my-name">Hi, My name is</h1><h1 className="name">Rohit</h1>
         <p>A software developer with a passion for learning and creating.</p>
         <div className="social">
           <a

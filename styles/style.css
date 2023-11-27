@@ -1,6 +1,6 @@
 
 .about {
-  background-color: rgb(29, 44, 81);
+  background-color: #3e497a;
   color: white;
   height: 100vh;
   display: flex;
@@ -47,14 +47,13 @@
 }
 .skills{
   font-family: Arial, Helvetica, sans-serif;
-  color: rgb(29, 44, 81);  margin: 2rem;
+  color: #3e497a;  margin: 2rem;
   text-align: center;
 }
 .skill{
   font-size: 3.5rem;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  color: rgb(29, 44, 81);
 }
 .skills>div{
   /* display: flex;

@@ -6,6 +6,7 @@
   flex-wrap: nowrap;
   align-items: center;
   color: white;
+  bottom: 0;
 }
 .icons{
   display: flex;
@@ -13,6 +14,6 @@
   width: 100%;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content:center;
+  justify-content:space-around;
 }
 

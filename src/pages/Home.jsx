@@ -1,14 +1,40 @@
-import React from "react";
+import React, { useEffect } from "react";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import "../../styles/home.css";
 
 function Home() {
+  const showName = () => {
+    const elem = document.getElementsByClassName("name")[0];
+    elem.innerHTML = "";
+    const name = "Rohit";
+    let i = 0;
+    const intervalId = setInterval(() => {
+      if (i >= name.length) {
+        clearInterval(intervalId);
+      } else {
+        elem.innerHTML += name[i];
+        i++;
+      }
+    }, 200);
+  
+    return intervalId; // Return the interval ID
+  };
+  
+  useEffect(() => {
+    const intervalId = showName(); // Store the interval ID returned by showName
+  
+    return () => {
+      clearInterval(intervalId); // Clear the interval on component unmount or before the useEffect runs again
+    };
+  }, []);
+  
+  
   return (
     <div className="home">
-      <div className="about typewriter">
-        <h1 className="my-name">Hi, My name is</h1><h1 className="name">Rohit</h1>
+      <div className="about">
+        <h1 className="my-name">Hi, My name is</h1><h1 className="name"></h1>
         <p>A software developer with a passion for learning and creating.</p>
         <div className="social">
           <a

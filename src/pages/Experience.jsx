@@ -42,7 +42,7 @@ function Experience() {
           <h4 className="vertical-timeline-element-title">
             Indian Institute of Information Technology, Sonepat, Haryana
           </h4>
-          <p>Computer Science & Engineering - 8.63 GPA (Current)</p>
+          <p>Computer Science & Engineering - 8.65 GPA (Current)</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--achievment"

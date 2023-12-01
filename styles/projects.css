@@ -7,57 +7,51 @@
 
 .projects {
   display: grid;
-  /* grid-template-columns: repeat(3, 1fr); */
-  grid: auto / auto auto auto;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
   align-items: center;
   justify-content: center;
-  justify-items: center;
-  margin-bottom: 5vh;
 }
+
 .card{
-  width: 20vw;
+  width: 18rem;
   margin: 20px;
   color: #3e497a;
-
+  border-radius: 20px;
+  box-shadow: 0 5px 5px;
 }
-.card-img-top{
-  padding: 20px;
+:hover.card{
+  box-shadow: 0 0 15px;
 }
-
-/* @media only screen and (max-width: 1050px) {
-  .card{
-    width: 30vw;
-    margin: 10px;
-  }
-  .card-title{
-    font-size: 2.85vw;
-    font-weight: bold;
-  }
-} */
+.card-title{
+  font-size: smaller;
+}
 
 @media only screen and (max-width: 1024px) {
+  .card{
+    width: 12rem;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .card{
+    width: 10rem;
+  }
+}
+@media only screen and (max-width: 580px) {
   .projects{
-    grid: auto / auto auto;
+    grid-template-columns: auto auto;
   }
   .card{
     width: 40vw;
-    margin: 8px;
   }
-  .card-title{
-    font-size: 3vw;
+}
+@media only screen and (max-width: 400px) {
+  .projects{
+    grid-template-columns: auto;
+  }
+  .card{
+    width: 90vw;
   }
 }
 
-@media only screen and (max-width: 430px) {
-  .projects{
-    grid: auto / auto;
-  }
-  .card{
-    width: 80vw;
-    margin-bottom: 25px;
-  }
-  .card-title{
-    font-size: 5vw;
-    font-weight: bold;
-  }
-}
+

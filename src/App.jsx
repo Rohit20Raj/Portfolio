@@ -8,6 +8,7 @@ import Projects from "./pages/Projects";
 import Experience from "./pages/Experience";
 import Footer from "./components/Footer";
 import './App.css';
+import ProjectDisplay from "./components/ProjectDisplay";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/:id" element={<ProjectDisplay/>}/>
           <Route path="/experience" element={<Experience />} />
         </Routes>
         <Footer/>

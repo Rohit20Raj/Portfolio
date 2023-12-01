@@ -1,0 +1,12 @@
+.project-display{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 77vh;
+}
+
+.project-display>.card{
+  width: 25rem;
+}
+
+
